@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MangaVip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <section id="home">
+    <div class="headerbg ">
+      <header>
+        <div class="container ">
+          <div class="navbar flex1">
+            <div class="logo">
+              <img style="width: 150px; width: 73px;" src="image/logo.png" alt="">
+            </div>
+
+            <nav>
+              <ul id="menuitem">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="#">Mangalar</a></li>
+                <li><a href="#">Webtoon</a></li>
+                <li><a href="#">Light novel</a></li>
+                <li><a href="#">Hakkımda</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+            <div class="subscribe flex">
+              <i class="fas fa-search"></i>
+              <i id="palybtn" class="fas fa-user"></i>
+              <button>Abone Ol</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <h1>JoJo's Bizarre Adventure</h1>
+
+            <div class="time flex">
+              <span>8 Part</span>
+              <i class="fas fa-circle"></i>
+              <p>1987</p>
+              <i class="fas fa-circle"></i>
+              <button>Manga</button>
+            </div>
+
+            <p>JoJo's Bizare Adventure, çeşitli üyeleri sahip oldukları eşsiz güçleri kullanarak doğaüstü düşmanları almayı hedeflediklerini keşfeden bir aile olan Joestar ailesinin hikâyesini anlatmaktadır.
+            </p>
+            <div class="button flex">
+              <button class="btn">Oku</button>
+              <a style="color: white;" href="https://tr.wikipedia.org/wiki/Hirohiko_Araki" target="_blank"><p>Hirohiko Araki</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Mangalar</h2>
+        <a href="#"><button>Daha Fazla</button></a>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/home.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>JoJo's Bizarre Adventure</h3>
+              <div class="time flex">
+                <span>Hirohiko Araki</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBox">
+            <img src="image/tokyog.jpg" alt="">
+            <div class="icon">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="content">
+            <i id="palybtn" class="fas fa-play"></i>
+          </div>
+          <div class="text">
+            <h3>Tokyo Ghoul</h3>
+            <div class="time flex">
+              <span>Sui İşida</span>
+              <i class="fas fa-circle"></i>
+              <a>Manga</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBox">
+            <img src="image/deathnote.jpg" alt="">
+            <div class="icon">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="content">
+            <i id="palybtn" class="fas fa-play"></i>
+          </div>
+          <div class="text">
+            <h3>Death Note</h3>
+            <div class="time flex">
+              <span>Tsugumi Ohba</span>
+              <i class="fas fa-circle"></i>
+              <a>Manga</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/oyasumipunpun.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Oyasumi Punpun</h3>
+              <div class="time flex">
+                <span>Inio Asano</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/opm.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>One Punch Man</h3>
+              <div class="time flex">
+                <span>Yusuke Murata</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/kingdom.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Kingdom</h3>
+              <div class="time flex">
+                <span>Yasuhisa Hara</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/berserk-aj-1920x1080.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Berserk</h3>
+              <div class="time flex">
+                <span>Güncel</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/onepiece.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>One Piece</h3>
+              <div class="time flex">
+                <span>Eiiçiro Oda</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/centuryboys.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>20th century boys</h3>
+              <div class="time flex">
+                <span>Naoki Urasawa</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/demonslayer.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Demon Slayer</h3>
+              <div class="time flex">
+                <span>Koyoharu Gotouge</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/jujutsukaisen.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Jujutsu Kaisen</h3>
+              <div class="time flex">
+                <span>Gege Akutami</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/Billy-Bat.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Billy Bat</h3>
+              <div class="time flex">
+                <span>Naoki Urasawa</span>
+                <i class="fas fa-circle"></i>
+                <a>Manga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Webtoonlar</h2>
+        <button>Daha Fazla</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/Sololeveling.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Solo Leveling</h3>
+              <div class="time flex">
+                <span>Chugong</span>
+                <i class="fas fa-circle"></i>
+                <a>Webtoon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/wallpapersden.com_jin-mori-the-god-of-high-school_5120x2880.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>The God of High School</h3>
+              <div class="time flex">
+                <span>Yongje Park</span>
+                <i class="fas fa-circle"></i>
+                <a>Webtoon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/tbaen.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>The Beginning After The End</h3>
+              <div class="time flex">
+                <span>TurtleMe</span>
+                <i class="fas fa-circle"></i>
+                <a>Webtoon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/windbreking.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Wind Breaker</h3>
+              <div class="time flex">
+                <span>Satoru Nii</span>
+                <i class="fas fa-circle"></i>
+                <a>Webtoon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+
+
+
+  <section class="new_realase top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/tokyog.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>MangaVip Özel</h2>
+              <h1>Tokyo Ghoul</h1>
+            </div>
+            <div class="time flex">
+              <span>Sui İşida</span>
+              <i class="fas fa-circle"></i>
+              <p>2011</p>
+              <i class="fas fa-circle"></i>
+              <button>Manga</button>
+            </div>
+
+            <p>Hikâye Ken Kaneki'nin Anteiku isimli bir kahve dükkanında Rize Kamishiro adında bir kadınla tanışmasıyla başlar. Onlar beraber buluşmak için bir tarih planlarlar. Kaneki eve yürürken, Rize tarafından saldırıya uğrar. Rize bir ghoul'dur, insan eti yiyerek hayatini sürdüren bir çeşit insan üstü varlıktır kısacası.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">Oku</button>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/deathnote.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>MangaVip Özel</h2>
+              <h1>Death Note</h1>
+            </div>
+            <div class="time flex">
+              <span>Tsugumi Ohba</span>
+              <i class="fas fa-circle"></i>
+              <p>2006</p>
+              <i class="fas fa-circle"></i>
+              <button>Manga</button>
+            </div>
+
+            <p>Light'ın aldığı Ölüm Defteri'ni insan dünyasına düşüren orijinal şinigamidir. Monotonluktan sıkılmış olan ve şinigami dünyasında şinigamilerin kralını kandırıp ikinci bir Ölüm Defteri'ne sahip olan Ryuk, Death Note'un hikâyesini başlatır.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">Oku</button>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/centuryboys.png" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>MangaVip Özel</h2>
+              <h1>20th Century Boys</h1>
+            </div>
+            <div class="time flex">
+              <span>Naoki Urasawa</span>
+              <i class="fas fa-circle"></i>
+              <p>1999</p>
+              <i class="fas fa-circle"></i>
+              <button>Manga</button>
+            </div>
+
+            <p>Dünyadaki büyük şehirlere hastalık saçan ve dev bir savaş robotuna sahip “büyük kötü”ye karşı savaştıkları bu hikaye çatısında çocukluklarının en heyecanlı yazını geçiren minik maceracılarımız, yazın bitişi ile hayaldünyalarından sıyrılmak ve realitenin içinde kavrulmak zorunda kalırlar.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">Oku</button>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/demonslayer.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>MangaVip Özel</h2>
+              <h1>Demon Slayer</h1>
+            </div>
+            <div class="time flex">
+              <span>Koyoharu Gotouge</span>
+              <i class="fas fa-circle"></i>
+              <p>2016</p>
+              <i class="fas fa-circle"></i>
+              <button>Manga</button>
+            </div>
+
+            <p>Seri, ailesi katledildikten ve küçük kız kardeşi Nezuko'nun bir iblis haline gelmesinden sonra iblis avcısı olmak isteyen Tanjiro Kamado'nun hikâyesini anlatmaktadır. Ufotable tarafından hazırlanan bir anime televizyon serisi Nisan-Eylül 2019 tarihleri arasında yayınlandı.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">Oku</button>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/oyasumipunpun.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>MangaVip</h2>
+              <h1>Oyasumi Punpun</h1>
+            </div>
+            <div class="time flex">
+              <span>Inio Asano</span>
+              <i class="fas fa-circle"></i>
+              <p>2007</p>
+              <i class="fas fa-circle"></i>
+              <button>Manga</button>
+            </div>
+
+            <p>İyi Geceler Punpun, bir çocuğun ilkokul yıllarından 20'li yaşlarının başına kadar olan kaotik aile bağlarını, arkadaşlarını, aşk hayatını ve hayallerini konu alan bir büyüme draması.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">Oku</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Light novel</h2>
+        <button>Dafa Fazla</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/197107-goblin-slayer-1920x1080.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Goblin Slayer</h3>
+              <div class="time flex">
+                <span>Kumo Kagyu</span>
+                <i class="fas fa-circle"></i>
+                <a>Light novel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/tatenoyuusha.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>The Rising of the Shield Hero</h3>
+              <div class="time flex">
+                <span>Aneko Yusagi</span>
+                <i class="fas fa-circle"></i>
+                <a>Light novel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/cote.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Classroom of the Elite</h3>
+              <div class="time flex">
+                <span>Shogo Kinugasa</span>
+                <i class="fas fa-circle"></i>
+                <a>Light novel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/Overlord.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Overlord</h3>
+              <div class="time flex">
+                <span>Kugane Maruyama</span>
+                <i class="fas fa-circle"></i>
+                <a>Light novel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/nogamenolife.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>No Game No Life</h3>
+              <div class="time flex">
+                <span>Yu Kamiya</span>
+                <i class="fas fa-circle"></i>
+                <a>Light novel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- paxi mate ko lai aata hai-->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <footer>
+    <div class="container mtop">
+      <div class="box">
+        <div class="logo">
+          <img style="height: 110px;width: 110px;" src="image/logo.png">
+        </div>
+        <p>MangaVip sitesinin amacı<br>Sitemiz aracılığı ile sizin okuyabileceğin serilere daha kolay ve reklamsız bir şekilde ulaşmanızı sağlamaktır.</p>
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>En Populer Mangalar</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>Tv Shows</li>
+            <li>Actors</li>
+            <li>Celebrity</li>
+          </ul>
+          <ul class="ul">
+            <li>Movie</li>
+            <li>Video</li>
+            <li>Basketball</li>
+            <li>Coress</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box ">
+        <h2>En Populer Webtoonlar</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Subscribe</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Uygulamamızı İndirin</h2>
+        <p>MangaVip Mobil Uygulamamız Yakında Sitemize Eklenecekdir.</p>
+        <div class="img flex1">
+          <img src="image/app1.png" alt="">
+          <img src="image/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">© Tüm Hakları Saklıdır - MangaVip - Alpha</p>
+  </footer>
+</body>
+
+</html>
